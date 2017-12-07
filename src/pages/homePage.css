@@ -1,0 +1,469 @@
+
+.title{
+    font-size: 1.6em;
+    color: white;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+.homeBackDiv{
+    width: 100%;
+    height:100%;
+    padding: 0;
+    background-color: white;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topDiv{
+    position: relative;
+    width: 100%;
+    background: url("../assets/img/breather-168754@3x.png") no-repeat 0px 0px;
+    background-size: 100% 100%;
+}
+.contentDiv{
+
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.logo{
+
+}
+
+.caseImgContainer{
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: block;
+}
+
+.caseImg{
+}
+
+.caseImgContainer:hover .caseMask{
+    /*animation: maskShow;*/
+    animation: maskShow 0.2s linear;
+    top: 0px;
+    height: auto;
+
+}
+
+.caseImgContainer:hover .lookIcon{
+    animation: apear 1s linear;
+    opacity: 1;
+}
+
+.lookIcon{
+    position: absolute;
+    top: 47%;
+    left: 47%;
+    width: 6%;
+    opacity: 0;
+}
+
+@keyframes maskShow {
+    from {height: 0}
+    to {height: 100%}
+}
+
+.caseMask{
+    position: absolute;
+    /*top: 100%;*/
+    top: 0;
+    width: 70%;
+    height: 0;
+    left: 15%;
+    border-radius: 5%;
+    /*transition:all 1s linear .3s;*/
+
+}
+
+/*.caseImg:hover{*/
+    /*!*background-color: red;*!*/
+    /*background: url("../assets/img/Mask@3x.png") no-repeat 0px 0px;*/
+    /*background-size: 100% 100%;*/
+/*}*/
+
+.content{
+    font-size: 1em;
+    color: #eeeeee;
+    text-align: center;
+    width: 100%;
+    font-weight: 100;
+
+}
+.alertView_middleScreen{
+    position: fixed;
+    top: 25%;
+    left: 10%;
+    width: 80%;
+    height: 200px;
+    background: white;
+    border-radius: 10px;
+    animation: apear 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #0085fe;
+    justify-content: center;
+}
+.alertView_bigScreen{
+    position: fixed;
+    top: 25%;
+    left: 20%;
+    width: 60%;
+    height: 30%;
+    background: white;
+    border-radius: 10px;
+    animation: apear 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #0085fe;
+    justify-content: center;
+}
+.alertContentDiv{
+    height: 100%;
+    user-select: text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*text-align-last: justify;*/
+}
+
+.homeBtn{
+    text-align: center;
+    margin-top: 8%;
+    background-color: #1C8CFF;
+    color: white;
+}
+
+.contentDiv1{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 50px;
+}
+
+.contentDiv1 img{
+    width: 40%;
+    margin-top: 20px;
+}
+
+.contentDiv2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+    border: 1px solid #f2f2f2;
+    padding-bottom: 50px;
+
+}
+
+.contentDiv2_middle{
+    background-color: white;
+    padding-bottom: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #f2f2f2;
+}
+
+.circleFather{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+@keyframes apear{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes warn {
+    0% {
+        -webkit-transform: scale(0.5);
+        opacity: 0.0;
+    }
+    10% {
+        -webkit-transform: scale(0.55);
+        opacity: 0.1;
+    }
+    20% {
+        -webkit-transform: scale(0.6);
+        opacity: 1;
+    }
+    30% {
+        -webkit-transform: scale(0.65);
+        opacity: 0.9;
+    }
+    40% {
+        -webkit-transform: scale(0.7);
+        opacity: 0.8;
+    }
+    50% {
+        -webkit-transform: scale(0.75);
+        opacity: 0.7;
+    }
+    60% {
+        -webkit-transform: scale(0.8);
+        opacity: 0.6;
+    }
+    70% {
+        -webkit-transform: scale(0.85);
+        opacity: 0.5;
+    }
+    80% {
+        -webkit-transform: scale(0.9);
+        opacity: 0.4;
+    }
+    90% {
+        -webkit-transform: scale(0.95);
+        opacity: 0.2;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0.1;
+    }
+}
+
+
+.circleContainer {
+    position: relative;
+    width: 30%;
+    background-color: white;
+}
+/* 产生动画（向外扩散变大）的圆圈  */
+.pulse {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+    top:0px;
+    border: 1px solid #0085fe;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 50%;
+    z-index: 1;
+    animation: warn 6s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-delay: 4s;
+    opacity: 0;
+}
+
+.pulse1 {
+    position: absolute;
+    width: 100%;
+    padding-bottom: 100%;
+    top: 0px;
+    border: 1px solid #0085fe;
+    border-radius: 50%;
+    z-index: 1;
+    animation: warn 6s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    opacity: 0;
+
+}
+
+.pulse2 {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    padding-bottom: 100%;
+    border: 1px solid #0085fe;
+    border-radius: 50%;
+    z-index: 1;
+    animation: warn 6s linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    opacity: 0;
+
+}
+
+.circleContent{
+    position: absolute;
+    color: #0085fe;
+    width: 100%;
+    padding-top: 48%;
+    font-size: 1.6em;
+}
+
+.centerContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.leftContent{
+    text-align: right;
+    margin-top: 100px;
+}
+
+.rightContent{
+    text-align: left;
+    margin-top: 100px;
+}
+
+.bottomContent{
+    margin-top: 100px;
+}
+
+.contentDiv3{
+    padding-top: 50px;
+    background-color: white;
+    padding-bottom: 50px;
+}
+ul{
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.content2_middle_list{
+    position: relative;
+    text-align: center;
+    left: 20%;
+    width: 60%;
+}
+
+.content2_middle_list li{
+    margin: auto;
+    color: #0085fe;
+    margin-top: 4px;
+    text-align: left;
+}
+.content2_middle_list li span{
+    font-size: 1em;
+    color: #666666;
+}
+
+.content2_middle_list li p{
+    margin-top: 10px;
+    line-height: 1.8em;
+}
+
+.listContentCenter{
+    position: relative;
+    width: 60%;
+    left: 20%;
+}
+
+.listContent li , .listContentCenter li{
+    color: #0085fe;
+    margin-top: 10px;
+    text-align: left;
+    line-height: 1.8em;
+}
+.listContent li span , .listContentCenter li span{
+    font-size: 1em;
+    color: #666666;
+}
+
+.contentDiv4{
+    padding-top: 50px;
+    background-color: white;
+    border: 1px solid #f2f2f2;
+    padding-bottom: 50px;
+}
+
+.contentDiv5{
+    padding-top: 50px;
+    background-color: white;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.caseContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    margin-top: 8px;
+}
+
+.signContainer{
+    display: flex;
+}
+
+.signContainer div{
+
+    border: 1px solid #0085fe;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 10px;
+    padding: 0 10px 0 10px;
+    height: 1.5em;
+}
+
+.contentDiv6{
+    border: 1px solid #f2f2f2;
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.homeContentTitle{
+    font-size: 1.4em;
+    color: #333333;
+    line-height: 1.8em;
+}
+
+.homeContent{
+    font-size: 1em;
+    color: #666666;
+}
+
+.homeSubTitle{
+    font-size: 1.2em;
+    color: #333333;
+}
+.homeSubContent{
+    font-size: 0.9em;
+    color: #999999;
+}
+
+.home_button{
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    box-sizing: border-box;
+    border-radius: 2em;
+    height: auto;
+    background-color: #1C8CFF;
+    *display:inline;
+    *zoom:1;
+    font-size: 1.2em;
+    cursor: pointer;
+    min-width: 100px;
+
+}
+
+.home_button:hover{
+    background-color: #0477ec;
+}
+
+
